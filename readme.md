@@ -23,16 +23,21 @@ A modern, TypeScript-based boilerplate for creating FiveM web interfaces using N
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/fivem-nuxt-boilerplate.git
+git clone https://github.com/Pallepadehat/fivem-nuxt-boilerplate.git
 cd fivem-nuxt-boilerplate
 ```
 
-2. Install dependencies:
+2. cd into src:
+```bash
+cd src
+```
+
+3. Install dependencies:
 ```bash
 pnpm install
 ```
 
-3. Start the development server:
+4. Start the development server:
 ```bash
 pnpm dev
 ```
