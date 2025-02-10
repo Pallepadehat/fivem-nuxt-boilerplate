@@ -1,66 +1,131 @@
-# FiveM Nuxt Boilerplate
+# 🎮 FiveM Nuxt Boilerplate
 
-A modern, TypeScript-based boilerplate for creating FiveM web interfaces using Nuxt 3.
+<div align="center">
 
-## Features
+![FiveM](https://img.shields.io/badge/FiveM-Ready-blue?style=for-the-badge)
+![Nuxt 3](https://img.shields.io/badge/Nuxt_3-00DC82?style=for-the-badge&logo=nuxt.js&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
-- 🚀 Nuxt 3 for modern, SSR-capable web interfaces
-- 💪 TypeScript support out of the box
-- 🎨 TailwindCSS for utility-first styling
-- 🔄 Hot Module Replacement (HMR) for rapid development
-- 📱 Responsive design ready
-- 🔌 Easy FiveM NUI integration
+A production-ready, feature-rich boilerplate for creating modern FiveM user interfaces with Nuxt 3 and TypeScript.
 
-## Getting Started
+[Getting Started](#getting-started) •
+[Features](#features) •
+[Documentation](#documentation) •
+[Contributing](#contributing)
+
+</div>
+
+## ✨ Features
+
+### Core Technologies
+- 🚀 **Nuxt 3** - The Intuitive Vue Framework
+- 💪 **TypeScript** - Superior developer experience with type safety
+- 🎨 **TailwindCSS** - Utility-first CSS framework
+- 📦 **Pnpm** - Fast, disk space efficient package manager
+
+### Development Experience
+- ⚡️ **Hot Module Replacement (HMR)** - Instant feedback during development
+- 🔄 **Auto-imports** - Zero-config component importing
+- 🎯 **ESLint & Prettier** - Code quality and consistency
+- 🔍 **Vue DevTools** - Enhanced debugging experience
+
+### FiveM Integration
+- 🔌 **NUI Events Helper** - Simplified FiveM NUI communication
+- 🛡️ **Type-safe Events** - Predefined TypeScript interfaces for NUI events
+- 🎮 **Game Integration** - Ready-to-use FiveM native functions
+
+## 🚀 Getting Started
 
 ### Prerequisites
 
-- Node.js (v16 or higher)
-- pnpm (recommended) or npm
-- FiveM server
+```bash
+Node.js >= 16.x
+pnpm >= 7.x (recommended)
+FiveM server
+```
 
-### Installation
+### Quick Start
 
-1. Clone the repository:
+1. **Clone the repository**
 ```bash
 git clone https://github.com/Pallepadehat/fivem-nuxt-boilerplate.git
-cd fivem-nuxt-boilerplate
+cd fivem-nuxt-boilerplate/src
 ```
 
-2. cd into src:
-```bash
-cd src
-```
-
-3. Install dependencies:
+2. **Install dependencies**
 ```bash
 pnpm install
 ```
 
-4. Start the development server:
+3. **Start development server**
 ```bash
 pnpm dev
 ```
 
-## Project Structure
+4. **Build for production**
+```bash
+pnpm build
+```
+
+## 📁 Project Structure
 
 ```
 fivem-nuxt-boilerplate/
 ├── src/
-│   ├── pages/          # Route pages
-│   ├── components/     # Vue components
+│   ├── pages/          # Auto-routed pages
+│   ├── components/     # Reusable Vue components
+│   ├── composables/    # Reusable Vue composition functions
 │   ├── layouts/        # Page layouts
-│   └── assets/        # Static assets
+│   ├── utils/         # Helper functions
+│   ├── types/         # TypeScript type definitions
+│   └── assets/        # Static assets (images, styles)
 ├── public/            # Public static files
 └── nuxt.config.ts    # Nuxt configuration
 ```
 
-## Development
+## 🔧 Configuration
 
-- Use `pnpm dev` for local development
-- Pages are automatically routed based on their file structure in `src/pages`
-- TailwindCSS classes can be used directly in components
+### NUI Event Handling
 
-## License
+```typescript
+// Example of handling NUI events
+onNuiEvent('showUI', (data: ShowUIData) => {
+  // Handle UI visibility
+})
+```
 
-MIT License
+## 📚 Documentation
+
+- [Nuxt 3 Documentation](https://nuxt.com/docs)
+- [TailwindCSS Documentation](https://tailwindcss.com/docs)
+- [FiveM Native Reference](https://docs.fivem.net/natives/)
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- [Nuxt Team](https://nuxt.com/)
+- [FiveM Community](https://forum.cfx.re/)
+- [TailwindCSS Team](https://tailwindcss.com/)
+
+---
+
+<div align="center">
+
+Made with ❤️ by [Your Name]
+
+[Report Bug](https://github.com/Pallepadehat/fivem-nuxt-boilerplate/issues) •
+[Request Feature](https://github.com/Pallepadehat/fivem-nuxt-boilerplate/issues)
+
+</div>
